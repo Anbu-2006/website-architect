@@ -17,3 +17,4 @@ Release notes and development milestones.
 - [2026-10-07 11:33] feat(scaffolding): generate headless accessible component templates with Radix UI
 - [2026-10-07 12:39] feat(orchestrator): link UI design intelligence with live token generation pipeline
 - [2026-10-07 13:45] test(engine): run end-to-end validation across 12 commercial website archetypes
+- [2026-10-07 14:51] docs(handbook): publish the complete website builder operational guide and architecture
