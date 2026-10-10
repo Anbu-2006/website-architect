@@ -44,3 +44,4 @@ Release notes and development milestones.
 - [2026-10-10 13:42] docs(handbook): publish the complete website builder operational guide and architecture
 - [2026-10-10 14:48] feat(core): initialize 9-stage commercial website architecture engine
 - [2026-10-10 15:55] feat(tokens): build three-layer design token generator with 8dp spatial rhythm
+- [2026-10-10 17:01] feat(anti-slop): implement 61-rule design critique scanner for AI layout elimination
