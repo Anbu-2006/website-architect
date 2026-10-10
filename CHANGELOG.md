@@ -38,3 +38,4 @@ Release notes and development milestones.
 - [2026-10-08 20:27] feat(tokens): build three-layer design token generator with 8dp spatial rhythm
 - [2026-10-08 21:28] feat(anti-slop): implement 61-rule design critique scanner for AI layout elimination
 - [2026-10-10 09:17] perf(vitals): enforce Lighthouse 100/100 performance and zero CLS layout contracts
+- [2026-10-10 10:23] feat(scaffolding): generate headless accessible component templates with Radix UI
