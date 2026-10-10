@@ -43,3 +43,4 @@ Release notes and development milestones.
 - [2026-10-10 12:36] test(engine): run end-to-end validation across 12 commercial website archetypes
 - [2026-10-10 13:42] docs(handbook): publish the complete website builder operational guide and architecture
 - [2026-10-10 14:48] feat(core): initialize 9-stage commercial website architecture engine
+- [2026-10-10 15:55] feat(tokens): build three-layer design token generator with 8dp spatial rhythm
