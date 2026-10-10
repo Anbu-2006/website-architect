@@ -40,3 +40,4 @@ Release notes and development milestones.
 - [2026-10-10 09:17] perf(vitals): enforce Lighthouse 100/100 performance and zero CLS layout contracts
 - [2026-10-10 10:23] feat(scaffolding): generate headless accessible component templates with Radix UI
 - [2026-10-10 11:29] feat(orchestrator): link UI design intelligence with live token generation pipeline
+- [2026-10-10 12:36] test(engine): run end-to-end validation across 12 commercial website archetypes
