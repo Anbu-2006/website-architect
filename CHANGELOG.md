@@ -63,3 +63,4 @@ Release notes and development milestones.
 - [2026-10-11 15:30] feat(anti-slop): implement 61-rule design critique scanner for AI layout elimination
 - [2026-10-11 16:03] perf(vitals): enforce Lighthouse 100/100 performance and zero CLS layout contracts
 - [2026-10-11 16:37] feat(scaffolding): generate headless accessible component templates with Radix UI
+- [2026-10-11 17:11] feat(orchestrator): link UI design intelligence with live token generation pipeline
