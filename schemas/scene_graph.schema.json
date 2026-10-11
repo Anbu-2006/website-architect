@@ -1,0 +1,74 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "SceneGraphSpec",
+  "description": "Formal schema contract emitted by Agent 3 (3D & Kinetic Motion Specialist) defining WebGL budgets, camera, geometry, shaders, and disposal strategy.",
+  "type": "object",
+  "required": [
+    "canvas_id",
+    "rendering_budget",
+    "camera",
+    "geometry",
+    "shaders",
+    "disposal_strategy"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "canvas_id": { "type": "string" },
+    "rendering_budget": {
+      "type": "object",
+      "required": ["max_draw_calls", "max_triangles", "target_fps"],
+      "properties": {
+        "max_draw_calls": { "type": "integer", "maximum": 25 },
+        "max_triangles": { "type": "integer", "maximum": 60000 },
+        "target_fps": { "type": "integer", "enum": [60, 120] }
+      }
+    },
+    "camera": {
+      "type": "object",
+      "required": ["fov", "near", "far", "position"],
+      "properties": {
+        "fov": { "type": "number" },
+        "near": { "type": "number" },
+        "far": { "type": "number" },
+        "position": {
+          "type": "array",
+          "items": { "type": "number" },
+          "minItems": 3,
+          "maxItems": 3
+        }
+      }
+    },
+    "geometry": {
+      "type": "object",
+      "required": ["asset_path", "compression", "footprint_bytes"],
+      "properties": {
+        "asset_path": { "type": "string" },
+        "compression": { "type": "string", "enum": ["draco", "meshopt", "procedural"] },
+        "footprint_bytes": { "type": "integer", "maximum": 3145728 }
+      }
+    },
+    "shaders": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "vertex_path", "fragment_path", "uniforms"],
+        "properties": {
+          "name": { "type": "string" },
+          "vertex_path": { "type": "string" },
+          "fragment_path": { "type": "string" },
+          "uniforms": { "type": "object" }
+        }
+      }
+    },
+    "disposal_strategy": {
+      "type": "object",
+      "required": ["dispose_geometries", "dispose_materials", "dispose_textures", "force_context_loss"],
+      "properties": {
+        "dispose_geometries": { "type": "boolean" },
+        "dispose_materials": { "type": "boolean" },
+        "dispose_textures": { "type": "boolean" },
+        "force_context_loss": { "type": "boolean" }
+      }
+    }
+  }
+}

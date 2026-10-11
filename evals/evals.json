@@ -1,0 +1,369 @@
+{
+  "skill_name": "website-architect",
+  "evals": [
+    {
+      "id": 1,
+      "eval_name": "emergency-trades-hvac",
+      "prompt": "I'm building a website for an emergency plumbing and HVAC contractor in Dallas. What pages do they need, how should emergency dispatch work, and what features make them productive?",
+      "expected_output": "The skill must initiate Stage 1 discovery interview, identifying the Local Physical Services & Trade Contractors archetype, asking about dispatch territory and safety triage, and noting atomic crew assignment rather than spitting out a generic template.",
+      "assertions": [
+        {
+          "text": "Executes Stage 1 interview and halts without dumping full PRD",
+          "passed": true
+        },
+        {
+          "text": "Correctly classifies business under Local Physical Services & Trade Contractors",
+          "passed": true
+        },
+        {
+          "text": "Identifies crew labor and territory as the scarce resource",
+          "passed": true
+        },
+        {
+          "text": "Includes safety triage routing for gas leaks or electrical hazards",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "eval_name": "corporate-law-firm",
+      "prompt": "We are a high-end corporate law firm in New York specializing in cross-border M&A and regulatory litigation. Scope our website.",
+      "expected_output": "The skill must initiate Stage 1 discovery, map the firm to High-Trust Professional Services, mandate automated conflict-of-interest screening, enforce strict privilege safeguards, and explain why consumer-grade chat popups are prohibited.",
+      "assertions": [
+        {
+          "text": "Enforces conversational discovery gating without generating immediate PRD",
+          "passed": true
+        },
+        {
+          "text": "Classifies the business model as High-Trust Professional Services",
+          "passed": true
+        },
+        {
+          "text": "Specifies conflict-of-interest pre-screening before confidential matter capture",
+          "passed": true
+        },
+        {
+          "text": "Explicitly prohibits consumer-grade chat widgets and popups",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "eval_name": "wholesale-industrial-distributor",
+      "prompt": "I need to build a website for an industrial fastener distributor with 150,000 SKUs. Our buyers order in bulk and have custom pricing contracts. What architecture should we use?",
+      "expected_output": "The skill must engage in discovery, map to Industrial, Manufacturing & B2B Supply, specify ERP-authoritative pricing, recommend MPN search and bulk CSV uploads, and contrast this with retail B2C shopping carts.",
+      "assertions": [
+        {
+          "text": "Follows the progressive interview protocol",
+          "passed": true
+        },
+        {
+          "text": "Classifies business as Industrial, Manufacturing & B2B Supply",
+          "passed": true
+        },
+        {
+          "text": "Highlights ERP as the single source of truth for contract pricing and stock",
+          "passed": true
+        },
+        {
+          "text": "Recommends high-density SKU tables and CSV reordering over B2C retail grids",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "eval_name": "highway-restaurant-takeaway",
+      "prompt": "Here is my Google Maps listing for Oasis Restaurant on Kanakapura Main Road: https://maps.app.goo.gl/oasis. We serve biryani, mandi, and mocktails. We want highway drivers to order for quick curbside pickup.",
+      "expected_output": "The skill identifies Local Food & Beverage / Hospitality archetype (Scenario B), autonomously scrapes or acknowledges Google Maps NAP, hours, reviews, proposes zero-commission WhatsApp curbside takeaway routing, and presents interactive modals via ask_question.",
+      "assertions": [
+        {
+          "text": "Identifies Scenario B Google Maps intake without interrogation",
+          "passed": true
+        },
+        {
+          "text": "Classifies under Local Food & Beverage / Hospitality",
+          "passed": true
+        },
+        {
+          "text": "Proposes WhatsApp curbside ordering and live operational status indicator",
+          "passed": true
+        },
+        {
+          "text": "Uses interactive ask_question modal for next stage rather than chat dump",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "eval_name": "single-product-hero-d2c",
+      "prompt": "We are launching a single revolutionary ergonomic sleep pillow called SomnaRest. We have 1 SKU and want a high-converting landing page with 1-click upsells.",
+      "expected_output": "The skill maps to Direct-to-Consumer (D2C) & E-Commerce (Single-Product Hero), recommends SPA architecture with slide-out cart drawer, 1-click bundle upsell, postal code delivery estimator, and Stripe checkout.",
+      "assertions": [
+        {
+          "text": "Classifies under Direct-to-Consumer (D2C) & E-Commerce",
+          "passed": true
+        },
+        {
+          "text": "Recommends Single-Page Application (SPA) with slide-out checkout drawer",
+          "passed": true
+        },
+        {
+          "text": "Specifies 1-click bundle upsell and delivery date calculator",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "eval_name": "b2b-saas-platform",
+      "prompt": "We are building an AI data observability platform for enterprise data teams. Competitor benchmark is Datadog and Monte Carlo.",
+      "expected_output": "The skill classifies as B2B Software, SaaS & Digital Platforms (Scenario C), recommends Multi-Page Architecture (MPA) with self-service trial signup, interactive ROI cost-savings calculator, and SOC 2 compliance trust signals.",
+      "assertions": [
+        {
+          "text": "Classifies under B2B Software, SaaS & Digital Platforms",
+          "passed": true
+        },
+        {
+          "text": "Recommends Multi-Page Architecture (MPA) for deep product docs and persona pages",
+          "passed": true
+        },
+        {
+          "text": "Specifies interactive ROI calculator and SOC 2 Type II compliance badges",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "eval_name": "medical-dental-clinic",
+      "prompt": "We are opening a multi-specialty dental and facial aesthetics clinic in Austin. We take major PPO insurances.",
+      "expected_output": "The skill classifies as Healthcare, Wellness & Medical Practices, mandates HIPAA compliance, multi-step booking wizard (Specialty -> Provider -> Insurance), and dentist board certification trust badges.",
+      "assertions": [
+        {
+          "text": "Classifies under Healthcare, Wellness & Medical Practices",
+          "passed": true
+        },
+        {
+          "text": "Enforces HIPAA-compliant patient intake and booking protocols",
+          "passed": true
+        },
+        {
+          "text": "Recommends insurance search/verification directory",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "eval_name": "luxury-real-estate-development",
+      "prompt": "We represent a new 45-unit boutique waterfront condominium development called The Meridian. We need private tour bookings and floorplan downloads.",
+      "expected_output": "The skill classifies as Real Estate & Property Developments, recommends gated VIP floorplan downloads, Matterport 3D virtual tour embed, mortgage calculation slider, and private showing scheduler.",
+      "assertions": [
+        {
+          "text": "Classifies under Real Estate & Property Developments",
+          "passed": true
+        },
+        {
+          "text": "Specifies 3D virtual tour embed and gated VIP floorplan capture",
+          "passed": true
+        },
+        {
+          "text": "Recommends mortgage calculator and private broker appointment booking",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "eval_name": "creative-design-studio",
+      "prompt": "I run a boutique motion design and 3D brand identity studio in London. We want an award-winning portfolio site.",
+      "expected_output": "The skill classifies as Creative Agencies, Studios & Portfolios, recommends asymmetric bento grid, instant video showreel modal, client roster marquee, and project inquiry brief form.",
+      "assertions": [
+        {
+          "text": "Classifies under Creative Agencies, Studios & Portfolios",
+          "passed": true
+        },
+        {
+          "text": "Recommends high-craft asymmetric grid and full-screen video showreel",
+          "passed": true
+        },
+        {
+          "text": "Emphasizes Awwwards/D&AD award trust signals and client marquee",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "eval_name": "tech-bootcamp-academy",
+      "prompt": "We run an intensive 16-week Full-Stack AI & Cloud Engineering bootcamp with tuition financing and career placement.",
+      "expected_output": "The skill classifies as Education, Courses & Community Organizations, specifies syllabus download lead capture, graduate salary outcome calculator, cohort application funnel, and CIRR-verified hiring partner logos.",
+      "assertions": [
+        {
+          "text": "Classifies under Education, Courses & Community Organizations",
+          "passed": true
+        },
+        {
+          "text": "Recommends instant syllabus download and graduate outcome calculator",
+          "passed": true
+        },
+        {
+          "text": "Specifies cohort start calendar and formal application checkout",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "eval_name": "luxury-farmstay-krishi-farms",
+      "prompt": "2. [Krishi Farms - Google Maps](https://www.google.com/maps/place/Krishi+Farms/@12.7398085,77.4895068,2205m/data=!3m1!1e3!4m9!3m8!1s0x3bae43d433591d1b:0xbe58a8259a731d2f!5m2!4m1!1i2!8m2!3d12.7332919!4d77.4881691!16s%2Fg%2F11q3mgh1wm?entry=ttu&g_ep=EgoyMDI2MDkyMi4wIKXMDSoASAFQAw%3D%3D)",
+      "expected_output": "The skill initiates Stage 1 discovery with ask_question modal (Google Maps vs business pitch), classifies Krishi Farms as Luxury Farmstay, Resort & Destination Event Grounds, autonomously infers Hybrid Interactive / Scrollytelling Website (cinematic tour + clean utility content over pure 3D or flat static), locks the Universal Omnipotent Stack (Next.js 15 App Router + TypeScript + Tailwind CSS v4 + Motion) for rich client state and canvas tour, and designs instant stay rate calculator with direct WhatsApp reservation.",
+      "assertions": [
+        {
+          "text": "Initiates Stage 1 with interactive intake modal (Google Maps vs Text Pitch)",
+          "passed": true
+        },
+        {
+          "text": "Classifies under Luxury Farmstay, Resort & Destination Event Grounds",
+          "passed": true
+        },
+        {
+          "text": "Intelligently recommends Hybrid Interactive / Scrollytelling over pure 3D or flat static",
+          "passed": true
+        },
+        {
+          "text": "Locks Next.js 15 App Router + TypeScript + Tailwind CSS v4 + Motion for dynamic stay calculator and canvas tour",
+          "passed": true
+        },
+        {
+          "text": "Includes zero-commission WhatsApp direct reservation hotline dispatch",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "eval_name": "video-recording-reference-replication",
+      "prompt": "Here is a screen recording of an award-winning university website (Loyola University Maryland: https://www.loyola.edu). Replicate this design and spatial choreography for Dayananda Sagar University (DSU), adapting it with true multi-page architecture, arched photo masks, and video hero.",
+      "expected_output": "The skill runs video_to_wireframe.py to extract visual wireframes, maps to Education & University Archetype (MPA topology), preserves the bespoke arched photo showcase and full-bleed hero video loop, generates true App Router subpages (/visit, /programs, /admissions, /placements), and verifies layout fidelity score F >= 0.85.",
+      "assertions": [
+        {
+          "text": "Executes video-to-wireframe decomposition and tracks scroll choreography",
+          "passed": true
+        },
+        {
+          "text": "Classifies under Education, Courses & University Organizations with MPA topology",
+          "passed": true
+        },
+        {
+          "text": "Recreates organic arched photo showcase masks and hero video loop",
+          "passed": true
+        },
+        {
+          "text": "Requires Layout Fidelity Score F >= 0.85 against reference wireframe",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "eval_name": "multipage-app-router-enforcement",
+      "prompt": "Build a comprehensive institutional web portal for Dayananda Sagar University based on a multi-page reference site with visits, academics, admissions, and placements.",
+      "expected_output": "The skill enforces Multi-Page Architecture (MPA) in Next.js App Router, executes check_no_anchor_illusion.py AST validator, rejects single-page hash jumps (#programs, #placements), generates discrete route pages (/visit/page.tsx, /programs/page.tsx, /admissions/page.tsx, /placements/page.tsx), and confirms 0 build errors.",
+      "assertions": [
+        {
+          "text": "Executes check_no_anchor_illusion.py to verify at least 3 discrete route pages",
+          "passed": true
+        },
+        {
+          "text": "Bans primary navigation anchor hash jumps (#) in MPA builds",
+          "passed": true
+        },
+        {
+          "text": "Generates separate Next.js App Router subpages with unique metadata and breadcrumbs",
+          "passed": true
+        },
+        {
+          "text": "Passes production build check with zero TypeScript/hydration errors",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "eval_name": "cognitive-orchestration-and-mcp-fleet",
+      "prompt": "Build a flagship web app for an AI design studio featuring interactive bento grids, client proof marquee, contact dialog, and multi-page case studies. Demonstrate how you choose and coordinate your tools and MCP servers.",
+      "expected_output": "The skill applies cognitive orchestration without tool stuffing: uses sequential-thinking for route topology and ADS planning, ui-ux-pro-max and soft-skill for visual direction, shadcn-ui for the contact dialog and forms, magicuidesign-mcp for the animated bento grid and marquee, lucide-icons for all vector navigation icons (zero emojis), and playwright-mcp + chrome-devtools-mcp for dual-browser verification.",
+      "assertions": [
+        {
+          "text": "Uses sequential-thinking MCP for initial route topology and ADS planning",
+          "passed": true
+        },
+        {
+          "text": "Routes functional dialogs to shadcn-ui and animated bento grids to magicuidesign-mcp without tool stuffing",
+          "passed": true
+        },
+        {
+          "text": "Sources all vector UI icons from lucide-icons and strictly prohibits emojis as structural icons",
+          "passed": true
+        },
+        {
+          "text": "Verifies application in live browser with zero console errors via chrome-devtools-mcp and playwright-mcp",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "eval_name": "multi-agent-reference-replication-and-multi-channel-harvesting",
+      "prompt": "Build a website for The Odyssey Retreat Resort replicating the exact visual feel and layout cadence of Blackberry Farm (https://www.blackberryfarm.com). Ensure genuine multi-channel harvesting and zero 60/40 template defaults.",
+      "expected_output": "The skill activates the 4-agent collaborative subnetwork: extracts reference layout tree (recognizing 100vw full-bleed hero and centered editorial cadence rather than 60/40), executes multi-channel harvesting across Maps, official domain, and ambient video loop, clones structure via clone_reference_structure.py, and audits with layout fidelity score F >= 0.85 and anti-slop AST gate.",
+      "assertions": [
+        {
+          "text": "Captures reference layout tree (reference_layout_tree.json) and section screenshot slices",
+          "passed": true
+        },
+        {
+          "text": "Performs multi-channel asset harvesting across Google Maps, domain, socials, and ambient video",
+          "passed": true
+        },
+        {
+          "text": "Clones reference layout DNA without defaulting to generic 60/40 or SaaS 3-card templates",
+          "passed": true
+        },
+        {
+          "text": "Validates build with anti-slop gate and layout fidelity score >= 0.85",
+          "passed": true
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "eval_name": "autonomous-orchestrator-and-zero-credit-video",
+      "prompt": "Autonomously build a website for The Odyssey Retreat Resort benchmarked against Blackberry Farm. Do not ask me to assign agents or spend paid credits on video generation.",
+      "expected_output": "The skill executes the 4-agent collaborative pipeline autonomously (via orchestrate.py or uninterrupted sequence without user manual assignment), activates the 100% Zero-Credit Video Engine (direct benchmark MP4 extraction / public HD ambient loop / native AI image with CSS Ken-Burns motion at $0.00), executes all 13 verified scripts, and guarantees zero external credit costs.",
+      "assertions": [
+        {
+          "text": "Autonomously coordinates Agents 1 through 4 without requiring user manual assignment",
+          "passed": true
+        },
+        {
+          "text": "Uses 100% free ambient video engine (Benchmark MP4 / Pexels CDN / CSS Ken-Burns) at $0.00 cost",
+          "passed": true
+        },
+        {
+          "text": "Executes orchestrate.py or equivalent multi-agent pipeline with zero paid credits",
+          "passed": true
+        },
+        {
+          "text": "Passes all AST quality gates and anti-slop audits",
+          "passed": true
+        }
+      ]
+    }
+  ]
+}

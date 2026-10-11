@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "website-architect"
+version = "2.5.0"
+description = "Universal autonomous interactive website architecture, information scoping, asset intelligence, and production web building engine."
+authors = [
+  { name = "Anbuselvan T.", email = "anbuanbu8636@gmail.com" }
+]
+license = { text = "MIT" }
+readme = "README.md"
+requires-python = ">=3.11"
+keywords = [
+  "ai-agents",
+  "website-generator",
+  "web-architecture",
+  "design-systems",
+  "shadcn-ui",
+  "anti-slop",
+  "frontend-engineering"
+]
+dependencies = [
+  "pydantic>=2.10.0",
+  "jsonschema>=4.23.0",
+  "jinja2>=3.1.5",
+  "rich>=13.9.0",
+  "requests>=2.32.0",
+  "beautifulsoup4>=4.12.3",
+  "pillow>=11.0.0",
+  "playwright>=1.49.0"
+]
+
+[project.scripts]
+website-architect = "cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Anbu-2006/website-architect"
+Repository = "https://github.com/Anbu-2006/website-architect"
+Issues = "https://github.com/Anbu-2006/website-architect/issues"

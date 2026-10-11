@@ -1,0 +1,173 @@
+{
+  "business_name": "Luxury Oasis Villa",
+  "input_source": "business_pitch",
+  "raw_category_detected": "Not specified",
+  "identified_archetype": "Local Food & Beverage / Hospitality",
+  "identified_sub_type": "Luxury Farmstay, Resort & Destination Event Grounds",
+  "primary_revenue_model": "Per-night cottage/villa stay, weekend event buyouts, experiential farm/culinary tours",
+  "scarce_operational_resource": "Weekend calendar dates & private cottage booking slots",
+  "customer_arrival_mindset": "High-Ticket Experiential Deliberator (planning family celebration, luxury getaway; high sensory scrutiny)",
+  "core_web_vitals_target": {
+    "lcp": "< 1.2s",
+    "cls": "< 0.02"
+  },
+  "architecture_decision_score": {
+    "score": "4/15",
+    "formula": "Catalog (2) + Search (1) + Deliberation (5) - Immediacy (4) = 4",
+    "recommended_topology": "Single-Page Architecture (SPA)",
+    "topology_rationale": "ADS Score (4/15 <= 5): Optimal for high-speed conversion, focused brand storytelling, and mobile retention.",
+    "detected_features_influencing_topology": []
+  },
+  "canonical_route_architecture": [
+    {
+      "path": "/",
+      "name": "Consolidated Continuous Scroll Journey",
+      "purpose": "All 1.0 to N.0 sections on canonical root route with off-canvas slide-out drawers for details",
+      "required_sections": [
+        {
+          "id": "1.0",
+          "title": "Signature Hero",
+          "type": "Hero",
+          "description": "Ambient 60fps looping grounds video with headline, luxury badge, and check-in date scrubber"
+        },
+        {
+          "id": "2.0",
+          "title": "Estate & Grounds Ambiance",
+          "type": "Editorial Story",
+          "description": "Doppelrand nested photography showcasing organic acres, pool, and sunset lawn"
+        },
+        {
+          "id": "3.0",
+          "title": "Interactive Stay Rate Calculator",
+          "type": "Interactive Module",
+          "description": "Dynamic guest slider x nights picker x cottage tier with live total and instant WhatsApp payload"
+        },
+        {
+          "id": "4.0",
+          "title": "Accommodations & Luxury Suites",
+          "type": "Tabbed Catalog",
+          "description": "Curated cottage cards with square footage, bed configuration, private deck, and amenity pills"
+        },
+        {
+          "id": "5.0",
+          "title": "Farm-to-Table Gastronomy & Coffee Estate",
+          "type": "Sensory Grid",
+          "description": "Culinary heritage, estate-grown coffee tasting, organic garden harvests"
+        },
+        {
+          "id": "6.0",
+          "title": "Verified Guest Reviews & Social Proof",
+          "type": "Trust Strip",
+          "description": "Verified Google Maps 4.6+ star quotes and celebration photo carousel"
+        },
+        {
+          "id": "7.0",
+          "title": "Estate Directions & Route Navigation",
+          "type": "Map Embed",
+          "description": "1-tap Google Maps GPS navigation, road advisory, nearby landmarks"
+        },
+        {
+          "id": "8.0",
+          "title": "Instant Concierge WhatsApp Reservation",
+          "type": "Modal / CTA",
+          "description": "Structured zero-commission direct WhatsApp dispatch modal with pre-filled guest details"
+        }
+      ]
+    }
+  ],
+  "universal_stack_standard": "Next.js 15 (App Router) + TypeScript + Tailwind CSS v4 + Motion + Lucide React + Radix UI",
+  "inferred_experience_modality": "Modality 2: Hybrid Interactive / Scrollytelling",
+  "design_thesis": {
+    "recommended_specialist_skill": "soft-skill (High-End Visual Design: Warm Editorial)",
+    "spatial_geometry": "Full-Bleed Viewport Media + Editorial Minimalist Cadence (Grounded in Reference)",
+    "color_palette": {
+      "background": "#FAF8F5",
+      "foreground": "#1A1816",
+      "accent": "#8B6F4E",
+      "secondary": "#2D3B2D",
+      "surface": "#F2EFE9"
+    },
+    "typography_pairing": {
+      "display": "Cormorant Garamond (Serif)",
+      "body": "Plus Jakarta Sans (Sans-Serif)"
+    }
+  },
+  "needed_things": {
+    "canonical_page_and_section_anatomy": [
+      {
+        "id": "1.0",
+        "title": "Signature Hero",
+        "type": "Hero",
+        "description": "Ambient 60fps looping grounds video with headline, luxury badge, and check-in date scrubber"
+      },
+      {
+        "id": "2.0",
+        "title": "Estate & Grounds Ambiance",
+        "type": "Editorial Story",
+        "description": "Doppelrand nested photography showcasing organic acres, pool, and sunset lawn"
+      },
+      {
+        "id": "3.0",
+        "title": "Interactive Stay Rate Calculator",
+        "type": "Interactive Module",
+        "description": "Dynamic guest slider x nights picker x cottage tier with live total and instant WhatsApp payload"
+      },
+      {
+        "id": "4.0",
+        "title": "Accommodations & Luxury Suites",
+        "type": "Tabbed Catalog",
+        "description": "Curated cottage cards with square footage, bed configuration, private deck, and amenity pills"
+      },
+      {
+        "id": "5.0",
+        "title": "Farm-to-Table Gastronomy & Coffee Estate",
+        "type": "Sensory Grid",
+        "description": "Culinary heritage, estate-grown coffee tasting, organic garden harvests"
+      },
+      {
+        "id": "6.0",
+        "title": "Verified Guest Reviews & Social Proof",
+        "type": "Trust Strip",
+        "description": "Verified Google Maps 4.6+ star quotes and celebration photo carousel"
+      },
+      {
+        "id": "7.0",
+        "title": "Estate Directions & Route Navigation",
+        "type": "Map Embed",
+        "description": "1-tap Google Maps GPS navigation, road advisory, nearby landmarks"
+      },
+      {
+        "id": "8.0",
+        "title": "Instant Concierge WhatsApp Reservation",
+        "type": "Modal / CTA",
+        "description": "Structured zero-commission direct WhatsApp dispatch modal with pre-filled guest details"
+      }
+    ],
+    "interactive_conversion_modules": [
+      "Real-time stay rate calculator with guest slider ($Rate = Base x Guests x Nights)",
+      "Direct zero-commission structured WhatsApp reservation generator",
+      "60fps ambient grounds video scrubber / carousel",
+      "Interactive FAQ accordion with keyboard focus management"
+    ],
+    "north_star_conversion_action": "Direct Structured WhatsApp Reservation",
+    "whatsapp_payload_template": "Hi Luxury Oasis Villa, I want to reserve a stay at your property. Guests: [X] adults, [Y] kids. Check-in: [Date], Check-out: [Date]. Preferred accommodation: [Cottage/Villa]. Please confirm availability and rates.",
+    "back_office_dispatch_hub": "Direct WhatsApp Dispatch + Webhook into Google Sheets / Reservation CRM"
+  },
+  "curated_live_benchmarks": [
+    {
+      "name": "SingleThread Farm",
+      "url": "https://www.singlethreadfarms.com",
+      "dna": "Ultra-luxury hospitality, high-contrast serif headlines, warm stone background (#FAF8F5), generous 120px whitespace."
+    },
+    {
+      "name": "Blackberry Farm",
+      "url": "https://www.blackberryfarm.com",
+      "dna": "Heritage estate calm, full-bleed cinematic imagery, asymmetric 60/40 layouts, deep espresso ink typography."
+    },
+    {
+      "name": "Soho Farmhouse",
+      "url": "https://www.sohohouse.com/houses/soho-farmhouse",
+      "dna": "Refined rustic luxury, tactile olive & amber surfaces, bespoke private cabin booking flow."
+    }
+  ]
+}

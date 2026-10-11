@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "AssetsManifest",
+  "description": "Formal schema contract emitted by Agent 1 (Deep Internet Scout & Harvester) certifying authentic brand vectors, AVIF imagery, and social proof telemetry.",
+  "type": "object",
+  "required": [
+    "brand_vectors",
+    "imagery",
+    "telemetry_proof",
+    "performance_budget_bytes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "brand_vectors": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["name", "svg_path", "viewbox", "monochrome_optimized"],
+        "properties": {
+          "name": { "type": "string" },
+          "svg_path": { "type": "string" },
+          "viewbox": { "type": "string" },
+          "monochrome_optimized": { "type": "boolean" }
+        }
+      }
+    },
+    "imagery": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["id", "source_url", "local_avif_path", "width", "height", "aspect_ratio", "fetch_priority"],
+        "properties": {
+          "id": { "type": "string" },
+          "source_url": { "type": "string" },
+          "local_avif_path": { "type": "string" },
+          "width": { "type": "integer" },
+          "height": { "type": "integer" },
+          "aspect_ratio": { "type": "string" },
+          "fetch_priority": { "type": "string", "enum": ["high", "low", "auto"] }
+        }
+      }
+    },
+    "telemetry_proof": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["metric", "value", "audit_reference"],
+        "properties": {
+          "metric": { "type": "string" },
+          "value": { "type": "string" },
+          "audit_reference": { "type": "string" }
+        }
+      }
+    },
+    "performance_budget_bytes": {
+      "type": "integer",
+      "maximum": 5242880
+    }
+  }
+}

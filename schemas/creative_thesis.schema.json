@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "CreativeThesis",
+  "description": "Formal schema contract emitted by Agent 2 (Creative Art Director) defining the visual thesis, typography, OKLCH palette, and motion physics.",
+  "type": "object",
+  "required": [
+    "archetype",
+    "color_tokens",
+    "typography",
+    "spatial_pacing",
+    "motion_physics"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "archetype": {
+      "type": "string",
+      "enum": [
+        "luxury_boutique_hotel",
+        "high_frequency_fintech",
+        "industrial_precision_machinery",
+        "modern_saas_platform",
+        "artisanal_culinary_hospitality",
+        "aesthetic_medical_clinic",
+        "creative_design_studio",
+        "premium_ecommerce"
+      ]
+    },
+    "color_tokens": {
+      "type": "object",
+      "required": ["canvas", "surface", "border", "primary_text", "muted_text", "accent"],
+      "properties": {
+        "canvas": { "type": "string" },
+        "surface": { "type": "string" },
+        "border": { "type": "string" },
+        "primary_text": { "type": "string" },
+        "muted_text": { "type": "string" },
+        "accent": { "type": "string" }
+      }
+    },
+    "typography": {
+      "type": "object",
+      "required": ["display_family", "ui_family", "headline_tracking", "fluid_clamp_root"],
+      "properties": {
+        "display_family": { "type": "string" },
+        "ui_family": { "type": "string" },
+        "headline_tracking": { "type": "string" },
+        "fluid_clamp_root": { "type": "string" }
+      }
+    },
+    "spatial_pacing": {
+      "type": "object",
+      "required": ["section_density_alternation", "bento_asymmetry_ratio"],
+      "properties": {
+        "section_density_alternation": { "type": "boolean" },
+        "bento_asymmetry_ratio": { "type": "string" }
+      }
+    },
+    "motion_physics": {
+      "type": "object",
+      "required": ["spring_stiffness", "spring_damping", "spring_mass"],
+      "properties": {
+        "spring_stiffness": { "type": "number", "minimum": 50, "maximum": 500 },
+        "spring_damping": { "type": "number", "minimum": 10, "maximum": 50 },
+        "spring_mass": { "type": "number", "minimum": 0.1, "maximum": 5.0 }
+      }
+    }
+  }
+}

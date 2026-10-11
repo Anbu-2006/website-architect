@@ -1,0 +1,39 @@
+{
+  "name": "website-architect",
+  "displayName": "Website Architect & Master Builder",
+  "version": "2.5.0",
+  "description": "Universal autonomous interactive website architecture, information scoping, asset intelligence, and production web building engine. Governs a 5-Subagent Finite State Machine (Deep Internet Scout, Creative Art Director, 3D & Kinetic Motion Specialist, Master Production Builder, and Forensic QA Auditor) across deterministic state locks, spatial file-system fencing, and signed schema contracts. Enforces 22+ forensic AST checks, leak-free R3F 3D Canvas (<3MB Draco, WebGL context disposal), unified Lenis + GSAP scroll ticker, fluid type clamping, and Asymmetric Bento Grid 2.0.",
+  "author": "Anbuselvan T. (@Anbu-2006)",
+  "repository": "https://github.com/Anbu-2006/website-architect",
+  "install_method": "custom-engineered",
+  "subnetwork_scripts": [
+    "orchestrate.py",
+    "creative_director_agent.py",
+    "scene_graph_generator.py",
+    "classify_business.py",
+    "curate_user_assets.py",
+    "extract_tokens.py",
+    "harvest_assets.py",
+    "clone_reference_structure.py",
+    "crawl_sitemap.py",
+    "video_to_wireframe.py",
+    "resilient_sourcing.py",
+    "section_option_previewer.py",
+    "anti_slop_gate.py",
+    "check_no_anchor_illusion.py",
+    "layout_fidelity_score.py",
+    "verify_orchestration.py"
+  ],
+  "mcp_dependencies": [
+    "shadcn-ui",
+    "magicuidesign-mcp",
+    "lucide-icons",
+    "sequential-thinking",
+    "playwright-mcp",
+    "chrome-devtools-mcp",
+    "21st-magic",
+    "higgsfield"
+  ],
+  "verification_status": "pass_100%",
+  "updated_at": "2026-10-11T23:25:00Z"
+}
