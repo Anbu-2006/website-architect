@@ -50,3 +50,4 @@ Release notes and development milestones.
 - [2026-10-10 20:20] feat(orchestrator): link UI design intelligence with live token generation pipeline
 - [2026-10-10 21:26] test(engine): run end-to-end validation across 12 commercial website archetypes
 - [2026-10-11 09:17] docs(handbook): publish the complete website builder operational guide and architecture
+- [2026-10-11 09:50] feat(core): initialize 9-stage commercial website architecture engine
